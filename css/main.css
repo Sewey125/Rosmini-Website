@@ -162,4 +162,64 @@ word-spacing:
   .next {
     right: 20px;
   }
+<<<<<<< HEAD
   
+=======
+   
+  .events-section{
+    display:flex;
+    width:100%;
+}
+
+/* LEFT SIDE EVENTS */
+
+.events-left{
+    width:55%;
+    padding:40px;
+    background:white;
+}
+
+.events-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.events-header h2{
+    color:#1b3c7a;
+}
+
+.events-header a{
+    text-decoration:none;
+    color:#1b3c7a;
+}
+
+.event-item{
+    border-bottom:1px solid #ddd;
+    padding:15px 0;
+}
+
+.date{
+    color:#c91c1c;
+    font-weight:bold;
+}
+
+/* RIGHT SIDE CARDS */
+
+.events-right{
+    width:45%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.card{
+    height:180px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#d40000;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}
+>>>>>>> 54a9c2f565b761df68ff12ec08b15925583a26f8
