@@ -162,11 +162,10 @@ word-spacing:
   .next {
     right: 20px;
   }
-<<<<<<< HEAD
-  
-=======
+
+
    
-  .events-section{
+.events-section{
     display:flex;
     width:100%;
 }
@@ -222,4 +221,3 @@ word-spacing:
     font-size:20px;
     font-weight:bold;
 }
->>>>>>> 54a9c2f565b761df68ff12ec08b15925583a26f8
