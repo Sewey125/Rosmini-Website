@@ -4,7 +4,7 @@
 <head>
     
     <title>Rosmini School website</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
@@ -43,8 +43,7 @@
         <button class="prev" onclick="prevSlide()">&#10094;</button>
         <button class="next" onclick="nextSlide()">&#10095;</button>
       </div>
-
-
+      
       <div class="events-section">
 
         <div class="events-left">
@@ -90,7 +89,7 @@
       <script>
         let slideIndex = 0;
         const slides = document.querySelector('.slides');
-        const images = document.querySelectorAll('.slides ximg');
+        const images = document.querySelectorAll('.slides img');
       
         function nextSlide() {
           slideIndex++;
@@ -108,7 +107,7 @@
           updateSlide();
         }
       
-        function updateSlide() {x
+        function updateSlide() {
             slides.style.transform = `translateX(-${slideIndex * 100}%)`;
         }
         setInterval(nextSlide, 3000); 
