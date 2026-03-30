@@ -8,118 +8,105 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
-</head>
-<body>
-    <div class="bar">
-
-
- <div >
-    <a href="https://rosmini.bridge.school.nz/absence">   <i class="fas fa-user-minus"></i>
-         Abcences </a> </div>
-            <div> <a href="https://www.rosmini.school.nz/notices">< </i> Daily Notices</a></div>
-        <div><a href="https://rosmini.bridge.school.nz/"><i class="fas fa-user-circle"></i> Login/Portal</a> </div>
-        <div><a href="https://www.rosmini.school.nz/calendar"><i class="fas fa-calendar-alt"></i> Upcoming events</div>
-        <div><a href="https://www.rosmini.school.nz/contact-us">  <i class="fas fa-phone-alt"></i> Contact us</a> </div>
-    </div>
-    
-        <div class="navbar">
-            <a href="http://127.0.0.1:3000/INDEX.HTML" class="nav-item">Home</a>
-            <a href="https://www.rosmini.school.nz/about-rosmini" class="nav-item">About us </a>
-            <a target="_blank" href="https://www.rosmini.school.nz/life-rosmini" class="nav-item">Services</a>
-            <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_rosmini_logo_full.svg" width="307.1px"  height="104.98" class="nav-item"> </a>
-            <a href="https://www.rosmini.school.nz/enrolment" class="nav-item"> Food </a>                                          
-            <a href="https://www.rosmini.school.nz/community" class="nav-item">Community </a>
-            <a href="https://www.rosmini.school.nz/academic" class="nav-item"> History</a>
-    </div> 
-
-    <div class="slider" >
-        <div class="slides">
-          <img src="2022_08_04_group-001.jpg" alt="Image 1">
-          <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_science-005.jpg" alt="Image 2">
-          <img src="https://rosmini2022.ibcdn.nz/media/2023_11_21_group-library-image-aircraft-build-high-school-students.jpg" alt="Image 3">
-          <img src="https://rosmini2022.ibcdn.nz/media/2023_11_21_167a8265-2.jpg" alt="Image 4">
-          <img src="https://rosmini2022.ibcdn.nz/media/2024_03_19_athletics-carousel.jpg" alt="Image 5">
-        </div>
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
+  </head>
+  <body>
+  
+      <div class="top-bar">
+          <a href="https://rosmini.bridge.school.nz/absence"><i class="fas fa-user-minus"></i> Absences</a>
+          <a href="https://www.rosmini.school.nz/notices"><i class="fas fa-bullhorn"></i> Daily Notices</a>
+          <a href="https://rosmini.bridge.school.nz/"><i class="fas fa-user-circle"></i> Login/Portal</a>
+          <a href="https://www.rosmini.school.nz/calendar"><i class="fas fa-calendar-alt"></i> Upcoming Events</a>
+          <a href="https://www.rosmini.school.nz/contact-us"><i class="fas fa-phone-alt"></i> Contact Us</a>
       </div>
       
-      <div class="events-section">
-
-        <div class="events-left">
-      
-          <div class="events-header">
-            <h2>Coming Events</h2>
-            <a href="#">View All</a>
+      <nav class="navbar">
+          <a href="#" class="nav-item">Home</a>
+          <a href="#" class="nav-item">About Us</a>
+          <a href="#" class="nav-item">Services</a>
+          
+          <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_rosmini_logo_full.svg" alt="Rosmini Logo" class="nav-logo">
+          
+          <a href="#" class="nav-item">Enrolment</a>                                          
+          <a href="#" class="nav-item">Community</a>
+          <a href="#" class="nav-item">History</a>
+      </nav> 
+  
+      <div class="slider">
+          <div class="slides" id="slide-container">
+              <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_science-005.jpg" alt="Science">
+              <img src="https://rosmini2022.ibcdn.nz/media/2023_11_21_group-library-image-aircraft-build-high-school-students.jpg" alt="Aircraft Build">
+              <img src="https://rosmini2022.ibcdn.nz/media/2023_11_21_167a8265-2.jpg" alt="Group Students">
+              <img src="https://rosmini2022.ibcdn.nz/media/2024_03_19_athletics-carousel.jpg" alt="Athletics">
           </div>
-      
-          <div class="event-item">
-            <span class="date">11 MAR</span>
-            <p>Young Vinnies Facilitation Event - For Leaders</p>
-          </div>
-      
-          <div class="event-item">
-            <span class="date">13 MAR</span>
-            <p>Fiefia Night - Polyfest 2026</p>
-          </div>
-      
-          <div class="event-item">
-            <span class="date">13 MAR</span>
-            <p>Victoria Uni first visit</p>
-          </div>
-      
-          <div class="event-item">
-            <span class="date">13 MAR</span>
-            <p>Basketball - Whai Tournament</p>
-          </div>
-      
-        </div>
-      
-        <div class="events-right">
-      
-          <div class="card">Prospectus</div>
-          <div class="card">Enrol</div>
-          <div class="card">Contact Us</div>
-          <div class="card">Portal</div>
-      
-        </div>
-      
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
       </div>
-
-      <footer class="site-footer">
-        <div class="footer-content">
-          <strong>Rosmini College</strong><br>
-          36 Dominion Street, Takapuna, Auckland 0622 · &lt; 1 km<br>
-          Open · Closes 3:30 PM · More hours<br>
-          09 489 5417
-        </div>
         
+      <div class="main-content-wrapper">
+          
+          <section class="events-left">
+              <div class="events-header">
+                  <h2>Upcoming Events</h2>
+                  <a href="#" class="view-all">View All</a>
+              </div>
+        
+              <div class="event-item">
+                  <div class="date-box">11<br>MAR</div>
+                  <div class="event-text">Young Vinnies Facilitation Event - For Leaders</div>
+              </div>
+        
+              <div class="event-item">
+                  <div class="date-box">13<br>MAR</div>
+                  <div class="event-text">Fiefia Night - Polyfest 2026</div>
+              </div>
+        
+              <div class="event-item">
+                  <div class="date-box">13<br>MAR</div>
+                  <div class="event-text">Victoria Uni First Visit</div>
+              </div>
+        
+              <div class="event-item">
+                  <div class="date-box">13<br>MAR</div>
+                  <div class="event-text">Basketball - Whai Tournament</div>
+              </div>
+          </section>
+        
+          <aside class="cards-right">
+              <a href="#" class="card">Staff</a>
+              <a href="#" class="card">Sports</a>
+              <a href="#" class="card">History</a>
+          </aside>
+  
+      </div>
+  
+      <footer class="site-footer">
+          <div class="footer-content">
+              <strong>Rosmini College</strong><br>
+              36 Dominion Street, Takapuna, Auckland 0622<br>
+              Open · Closes 3:30 PM<br>
+              09 489 5417
+          </div>
+      </footer>
+          
       <script>
-        let slideIndex = 0;
-        const slides = document.querySelector('.slides');
-        const images = document.querySelectorAll('.slides img');
-      
-        function nextSlide() {
-          slideIndex++;
-          if (slideIndex >= images.length) {
-            slideIndex = 0;
+          let currentIndex = 0;
+          const slidesContainer = document.getElementById('slide-container');
+          const totalSlides = document.querySelectorAll('.slides img').length;
+  
+          function updateSlidePosition() {
+              slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
           }
-          updateSlide();
-        }
-      
-        function prevSlide() {
-          slideIndex--;
-          if (slideIndex < 0) {
-            slideIndex = images.length - 1;
+  
+          function changeSlide(direction) {
+              currentIndex += direction;
+              if (currentIndex >= totalSlides) currentIndex = 0;
+              if (currentIndex < 0) currentIndex = totalSlides - 1;
+              updateSlidePosition();
           }
-          updateSlide();
-        }
-      
-        function updateSlide() {
-            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
-        }
-        setInterval(nextSlide, 3000); 
+  
+          // Auto-slide every 5 seconds
+          setInterval(() => { changeSlide(1); }, 5000);
       </script>
-     
-</body>
-</html>
+       
+  </body>
+  </html>
