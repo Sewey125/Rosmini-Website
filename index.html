@@ -6,6 +6,7 @@
     <title>Rosmini School website</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -16,6 +17,7 @@
         <!-- Main navigation bar with links to different sections -->
 
     <div class="navbar">
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</button>
         <a href="http://127.0.0.1:3000/INDEX.HTML" class="nav-item">Home</a>
         <a href="./html/sports.html" class="nav-item">Sports</a>
         <a  href="./html/staff.html" class="nav-item"> Staff</a>
@@ -139,6 +141,11 @@
         }
 
         setInterval(() => { changeSlide(1); }, 5000);
+
+        function toggleMenu() {
+        const nav = document.getElementById('nav-links');
+        nav.classList.toggle('open');
+    }   
     </script>
      
 </body>
