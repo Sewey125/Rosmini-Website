@@ -74,7 +74,9 @@ body {
 }
 
 .sportatrosmini img {
-  display: none; 
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .sportatrosmini-text {
@@ -230,7 +232,11 @@ body {
 }
 
 .gallery-item img {
-  display: none; 
+  display: block; 
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .gallery-note {
