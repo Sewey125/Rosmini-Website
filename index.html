@@ -125,27 +125,27 @@
     </footer>
 
     <script>
-        let currentIndex = 0;
-        const slidesContainer = document.getElementById('slide-container');
-        const totalSlides = document.querySelectorAll('.slides img').length;
+    let currentIndex = 0;
+const slidesContainer = document.getElementById('slide-container');
+const totalSlides = document.querySelectorAll('.slide').length; //
 
-        function updateSlidePosition() {
-            slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
+function updateSlidePosition() {
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
-        function changeSlide(direction) {
-            currentIndex += direction;
-            if (currentIndex >= totalSlides) currentIndex = 0;
-            if (currentIndex < 0) currentIndex = totalSlides - 1;
-            updateSlidePosition();
-        }
+function changeSlide(direction) {
+    currentIndex += direction;
+    if (currentIndex >= totalSlides) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = totalSlides - 1;
+    updateSlidePosition();
+}
 
-        setInterval(() => { changeSlide(1); }, 5000);
+setInterval(() => { changeSlide(1); }, 5000);
 
-        function toggleMenu() {
-        const nav = document.getElementById('nav-links');
-        nav.classList.toggle('open');
-    }   
+function toggleMenu() {
+    const nav = document.getElementById('nav-links');
+    nav.classList.toggle('open') 
+}
     </script>
      
 </body>
