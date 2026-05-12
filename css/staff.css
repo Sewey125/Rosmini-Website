@@ -7,7 +7,39 @@
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 .bar div a:hover {
+=======
+
+
+
+
+.sportatrosmini {
+  position: relative;
+  text-align: center;
+  background-color: #1b3c7a;
+  padding: 70px 20px;
+  color: white;
+}
+
+.sportatrosmini img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sportatrosmini-text {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+
+
+ 
+ 
+ bar div a:hover {
+>>>>>>> 536a0b3bfffa735b33454bbdea803a5a41f7e71b
   opacity: 0.8;
 }
 

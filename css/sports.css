@@ -61,7 +61,7 @@ body {
 }
 
 .navbar img {
-  height: 60px;
+  height: 80px;
   width: auto;
 }
 
@@ -73,9 +73,6 @@ body {
   color: white;
 }
 
-.sportatrosmini img {
-  display: none; 
-}
 
 .sportatrosmini-text {
   font-size: 3rem;
@@ -230,7 +227,11 @@ body {
 }
 
 .gallery-item img {
-  display: none; 
+  display: block; 
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .gallery-note {
