@@ -296,3 +296,7 @@
     .sports-boxes { flex-direction: column; }
     .sport-btn { max-width: 100%; }
   }
+  .navbar img {
+  height: 80px;
+  width: auto;
+}

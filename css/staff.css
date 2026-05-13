@@ -28,10 +28,13 @@
   }
 
 
-
+.navbar img {
+  height: 80px;
+  width: auto;
+}
   
   
-  bar div a:hover {
+  .bar div a:hover {
     opacity: 0.8;
   }
 

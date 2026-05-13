@@ -220,3 +220,7 @@ body {
   font-size: 0.8rem;
   color: #d0d0d0;
 }
+.navbar img {
+  height: 80px;
+  width: auto;
+}
