@@ -300,3 +300,8 @@
   height: 80px;
   width: auto;
 }
+
+.why-sport ul li i {
+  color: #1b3c7a;
+  margin-right: 8px;
+}
