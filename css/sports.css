@@ -210,27 +210,20 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
-
 .gallery-item {
-  background: #e6f0fa; 
-  border: 1px solid #c8deea;
   border-radius: 8px;
-  padding: 40px 10px;
-  text-align: center;
-  color: #1b3c7a;
-  font-weight: bold;
-  font-size: 0.9rem;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .gallery-item img {
   display: block; 
-  display: block;
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
 }
 
