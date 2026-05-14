@@ -52,7 +52,7 @@ body {
   cursor: pointer;
 
 }
-
+/* Nave bar */
 .nav-links {
 
   display: flex;
@@ -78,6 +78,7 @@ body {
   height: 80px;
   width: auto;
 }
+/*  Carousel  */
 
 .slider {
   width: 100%;
@@ -146,6 +147,7 @@ body {
   gap: 40px;
   padding: 0 20px;
 }
+/*  Events section bar */
 
 .events-left {
   flex: 2;
@@ -216,6 +218,7 @@ body {
   background: #c41230;
 }
 
+/*  Footer bar */
 
 
 .site-footer {
