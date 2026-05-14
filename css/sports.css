@@ -1,3 +1,6 @@
+  /* main body code */
+
+  
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -25,6 +28,7 @@
   .bar div a:hover {
     opacity: 0.8;
   }
+/* School motto */
 
   .bar-motto {
     background-color: #1b3c7a; 
@@ -35,6 +39,7 @@
     font-size: 0.9rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
+/* Navbar Code */
 
   .navbar {
     display: flex;
@@ -55,6 +60,7 @@
     font-size: 0.85rem;
     transition: color 0.3s;
   }
+/* Makes the text in navbar red when hovered over with mouse */
 
   .nav-item:hover {
     color: #c41230;
@@ -64,6 +70,7 @@
     height: 80px;
     width: auto;
   }
+/* Big sports at rosmini tag */
 
   .sportatrosmini {
     position: relative;
@@ -89,6 +96,7 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+/* Sport Info */
 
   .sport-btn {
     background-color: #316fb1;
@@ -189,6 +197,7 @@
     color: #316fb1;
     text-decoration: underline;
   }
+/* Sport at rosmini gallery */
 
   .sports-gallery-section {
     padding: 40px 20px;
@@ -232,6 +241,7 @@
     color: #888;
     margin-top: 20px;
   }
+/* Footer Code */
 
   .site-footer {
     background-color: #1b3c7a;
@@ -283,6 +293,7 @@
     font-size: 0.8rem;
     color: #d0d0d0;
   }
+/* Mobile  friendly code  */
 
   @media (max-width: 900px) {
     .sports-gallery { grid-template-columns: repeat(2, 1fr); }

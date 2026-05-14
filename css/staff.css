@@ -1,4 +1,7 @@
-  body {
+
+/* main body code */
+ 
+ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,6 +9,8 @@
     color: #316fb1;
     overflow-x: hidden;
   }
+
+  /* Big sport at rosmini bar */
 
   .sportatrosmini {
     position: relative;
@@ -32,11 +37,12 @@
   height: 80px;
   width: auto;
 }
-  
+
   
   .bar div a:hover {
     opacity: 0.8;
   }
+/* School motto */
 
   .bar-motto {
     background-color: #1b3c7a; 
@@ -47,6 +53,7 @@
     font-size: 0.9rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
+/* Na code */
 
   .navbar {
     display: flex;
