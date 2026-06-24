@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Fix 1: Added charset declaration to prevent windows-1252 fallback -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Page title and external stylesheets for layout and icons -->
@@ -15,12 +14,11 @@
     <div class="bar-motto">Charity fulfils the law</div>
 
     <!-- Main navigation bar with links to different sections -->
-    <!-- Fix 2: Removed stray </nav> tag — no matching <nav> was ever opened -->
-    <!-- Fix 3: Removed duplicate <body> tag that appeared after </nav> -->
+    <!-- Fix: Removed stray </nav> tag and duplicate <body> tag -->
     <div class="navbar">
         <a href="http://127.0.0.1:3000/INDEX.HTML" class="nav-item">Home</a>
         <a href="sports.html" class="nav-item">Sports</a>
-        <!-- Fix 4: Added alt attribute to logo image -->
+        <!-- Fix: Added alt attribute to logo image -->
         <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_rosmini_logo_full.svg" alt="Rosmini College Logo" width="307" height="105">
         <a href="staff.html" class="nav-item">Staff</a>
         <a href="contactus.html" class="nav-item">Contact Us</a>
@@ -37,17 +35,16 @@
         <div class="box-title">Send Us a Message</div>
 
         <label for="first-name">First Name</label>
-        <!-- Fix 5: Removed trailing slashes from void <input> elements -->
-        <input id="first-name" type="text" placeholder="Your first name">
+        <input id="first-name" type="text" placeholder="Your first name" />
 
         <label for="last-name">Last Name</label>
-        <input id="last-name" type="text" placeholder="Your last name">
+        <input id="last-name" type="text" placeholder="Your last name" />
 
         <label for="email">Email Address</label>
-        <input id="email" type="email" placeholder="your@email.com">
+        <input id="email" type="email" placeholder="your@email.com" />
 
         <label for="phone">Phone (Optional)</label>
-        <input id="phone" type="tel" placeholder="e.g. 021 123 4567">
+        <input id="phone" type="tel" placeholder="e.g. 021 123 4567" />
 
         <label for="enquiry">Enquiry Type</label>
         <select id="enquiry">
@@ -91,24 +88,24 @@
     </div>
 
     <!-- FOOTER -->
+    <!-- Fix: Changed h4 to h2 — h4 after h1 skips two heading levels -->
     <footer class="site-footer">
         <div class="footer-grid">
             <div class="footer-col">
-                <!-- Fix 6: Changed h4 to h3 — h4 after h1 skips 2 heading levels -->
-                <h3>Rosmini College</h3>
+                <h2>Rosmini College</h2>
                 <p>36 Domain Road</p>
                 <p>Takapuna, Auckland 0622</p>
                 <p>09 489 5417</p>
                 <a href="mailto:office@rosmini.school.nz">office@rosmini.school.nz</a>
             </div>
             <div class="footer-col">
-                <h3>For Students</h3>
+                <h2>For Students</h2>
                 <a href="../Index.html">Home</a>
                 <a href="sports.html">Sports</a>
                 <a href="staff.html">Staff</a>
             </div>
             <div class="footer-col">
-                <h3>Contact</h3>
+                <h2>Contact</h2>
                 <a href="contactus.html">Contact us</a>
             </div>
         </div>
