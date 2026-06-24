@@ -10,29 +10,31 @@
 <body>
 
     <!-- Top bar with school motto -->
-
     <div class="bar-motto">Charity fulfils the law</div>
-        <!-- Main navigation bar with links to different sections -->
 
+    <!-- Main navigation bar with links to different sections -->
+    <!-- Fix 2: Removed stray </nav> tag — there was no opening <nav> -->
     <div class="navbar">
         <a href="http://127.0.0.1:3000/INDEX.HTML" class="nav-item">Home</a>
         <a href="sports.html" class="nav-item">Sports</a>
-                <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_rosmini_logo_full.svg" width="307" height="105">
+        <!-- Fix 1: Added alt attribute to logo image -->
+        <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_rosmini_logo_full.svg" alt="Rosmini College Logo" width="307" height="105">
+        <a href="staff.html" class="nav-item">Staff</a>
+        <a href="contactus.html" class="nav-item">Contact Us</a>
+    </div>
 
-        <a  href="staff.html" class="nav-item"> Staff</a>
-        <a href="contactus.html" class="nav-item"> Contact Us</a>
-    </div> 
-    </nav> 
+    <!-- Staff Images and info -->
+    <div class="sportatrosmini">
+        <!-- Fix 9: Added h1 as the primary heading for the page -->
+        <h1 class="sportatrosmini-text">Staff at Rosmini</h1>
+    </div>
 
- <!-- Staff Images and info -->
- <div class="sportatrosmini">
-    <div class="sportatrosmini-text"> Staff at Rosmini</div>
-</div>
-
-    <h3 class="section-header"> Geography </h3>
+    <!-- Fix: Changed h3 to h2 so heading levels run h1 → h2 without skipping -->
+    <h2 class="section-header">Geography</h2>
 
     <div class="item">
-        <div class="box"><img src="../assets/staffpage/cooper.png"></div>
+        <!-- Fix 3: Added alt attribute -->
+        <div class="box"><img src="../assets/staffpage/cooper.png" alt="Mr Cooper"></div>
         <div>
             <p class="staff-name">Mr Cooper</p>
             <span class="badge badge-red">PRINCIPAL</span>
@@ -42,36 +44,39 @@
     </div>
 
     <div class="item">
-        <div class="box"> <img src="../assets/staffpage/morrogh.png"></div>
+        <!-- Fix 4: Added alt attribute -->
+        <div class="box"><img src="../assets/staffpage/morrogh.png" alt="Mrs Morrough"></div>
         <div>
-            <p class="staff-name"> Mrs Morrough </p>
+            <p class="staff-name">Mrs Morrough</p>
             <span class="badge badge-blue">DEPUTY PRINCIPAL</span>
-            <p>Responsible for curriculum development and staff professional growth. Mr  Wilson works closely with department heads to ensure the highest standard of learning outcomes.</p>
+            <p>Responsible for curriculum development and staff professional growth. Mr Wilson works closely with department heads to ensure the highest standard of learning outcomes.</p>
             <a href="mailto:s.marsh@rosmini.school.nz" class="email">wilson@rosmini.school.nz</a>
         </div>
     </div>
 
     <div class="item">
-        <div class="box"> <img src="../assets/staffpage/maggs.png"></div>
+        <!-- Fix 5: Added alt attribute -->
+        <div class="box"><img src="../assets/staffpage/maggs.png" alt="Mr Maggs"></div>
         <div>
-            <p class="staff-name"> Mr Maggs </p>
+            <p class="staff-name">Mr Maggs</p>
             <span class="badge badge-blue">DEPUTY PRINCIPAL</span>
-            <p>Responsible for curriculum development and staff professional growth. Mr  Wilson works closely with department heads to ensure the highest standard of learning outcomes.</p>
+            <p>Responsible for curriculum development and staff professional growth. Mr Wilson works closely with department heads to ensure the highest standard of learning outcomes.</p>
             <a href="mailto:s.marsh@rosmini.school.nz" class="email">wilson@rosmini.school.nz</a>
         </div>
     </div>
 
     <div class="item">
-        <div class="box"> <img src="../assets/staffpage/latch.png"></div>
+        <!-- Fix 6: Added alt attribute -->
+        <div class="box"><img src="../assets/staffpage/latch.png" alt="Mr Latch"></div>
         <div>
-            <p class="staff-name"> Mr Latch </p>
+            <p class="staff-name">Mr Latch</p>
             <span class="badge badge-blue">DEPUTY PRINCIPAL</span>
-            <p>Responsible for curriculum development and staff professional growth. Mr  Wilson works closely with department heads to ensure the highest standard of learning outcomes.</p>
+            <p>Responsible for curriculum development and staff professional growth. Mr Wilson works closely with department heads to ensure the highest standard of learning outcomes.</p>
             <a href="mailto:s.marsh@rosmini.school.nz" class="email">wilson@rosmini.school.nz</a>
         </div>
     </div>
 
-    <h3 class="section-header">DEPARTMENT HEADS</h3>
+    <h2 class="section-header">Department Heads</h2>
 
     <div class="item">
         <div class="box initials blue">JS</div>
@@ -84,7 +89,8 @@
     </div>
 
     <div class="item">
-        <div class="box"> <img src="../assets/staffpage/1741478028086.jpg"></div>
+        <!-- Fix 7: Added alt attribute -->
+        <div class="box"><img src="../assets/staffpage/1741478028086.jpg" alt="Ms Tait"></div>
         <div>
             <p class="staff-name">Ms Tait</p>
             <span class="badge badge-green">HEAD OF ENGLISH</span>
@@ -93,7 +99,7 @@
         </div>
     </div>
 
-    <h3 class="section-header"> Digital Technology</h3>
+    <h2 class="section-header">Digital Technology</h2>
 
     <div class="item">
         <div class="box"><img src="../assets/staffpage/John.png" alt="Lennard John"></div>
@@ -112,36 +118,29 @@
     </div>
 
     <!-- Footer with school contact info and useful links -->
-
+    <!-- Fix 8: Removed duplicate </footer> closing tag -->
     <footer class="site-footer">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>Rosmini College</h4>
+                <h3>Rosmini College</h3>
                 <p>36 Domain Road</p>
                 <p>Takapuna, Auckland 0622</p>
                 <p>09 489 5417</p>
                 <a href="mailto:office@rosmini.school.nz">office@rosmini.school.nz</a>
             </div>
             <div class="footer-col">
-                <h4>For Students</h4>
-                <a href="../Index.html"> Home </a>
+                <h3>For Students</h3>
+                <a href="../Index.html">Home</a>
                 <a href="sports.html">Sports</a>
-                <a href="staff.html"> Staff</a>
+                <a href="staff.html">Staff</a>
             </div>
-
-               <div class="footer-col">
-                <h4> Contact</h4>
-            
+            <div class="footer-col">
+                <h3>Contact</h3>
                 <a href="contactus.html">Contact us</a>
-             
             </div>
-           
         </div>
         <div class="footer-bottom">© 2025 Rosmini College · Charity fulfils the law</div>
     </footer>
-   
-  
-    </footer>
 
-
- 
+</body>
+</html>

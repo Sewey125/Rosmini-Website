@@ -9,8 +9,6 @@
 </head>
 <body>
 
-  
-
     <!-- MOTTO BAR -->
     <div class="bar-motto">Charity fulfils the law</div>
 
@@ -18,12 +16,16 @@
     <div class="navbar">
         <a href="http://127.0.0.1:3000/INDEX.HTML" class="nav-item">Home</a>
         <a href="sports.html" class="nav-item">Sports</a>
-        <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_rosmini_logo_full.svg" width="307" height="105">
-        <a  href="staff.html" class="nav-item"> Staff</a>
-        <a href="contactus.html" class="nav-item"> Contact Us</a>
-    </div> 
+        <!-- Fix 1: Added alt attribute to logo image -->
+        <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_rosmini_logo_full.svg" alt="Rosmini College Logo" width="307" height="105">
+        <a href="staff.html" class="nav-item">Staff</a>
+        <a href="contactus.html" class="nav-item">Contact Us</a>
+    </div>
+
     <!-- HERO -->
-    <div class="sportatrosmini">        <div class="sportatrosmini-text">Sport at Rosmini</div>
+    <div class="sportatrosmini">
+        <!-- Fix 6: Added h1 as the primary page heading -->
+        <h1 class="sportatrosmini-text">Sport at Rosmini</h1>
     </div>
 
     <!-- SPORT BUTTONS -->
@@ -35,15 +37,17 @@
     </div>
 
     <!-- WHY SPORT -->
+    <!-- Fix 3: Added h2 heading so the section is not headingless -->
+    <!-- Fix 2: Removed stray </div> that had no matching opening tag inside this section -->
     <section class="why-sport">
-     <ul>
-    <li><i class="fas fa-running"></i> Providing opportunities for all students to develop a healthy lifestyle through a breadth and depth of physical activities.</li>
-    <li><i class="fas fa-calendar-check"></i> Ensuring all students participate in a holistic curriculum which embeds physical activity into their daily routine.</li>
-    <li><i class="fas fa-medal"></i> Fostering and nurturing athletes who aspire to excellence in their selected codes.</li>
-    <li><i class="fas fa-user-graduate"></i> Developing the whole person as well as the athlete.</li>
-    <li><i class="fas fa-handshake"></i> Engaging with the school's wider community through developing partnerships with external agencies, regional and national sporting bodies and other schools.</li>
-</ul>
-        </div>
+        <h2>Why Sport at Rosmini</h2>
+        <ul>
+            <li><i class="fas fa-running"></i> Providing opportunities for all students to develop a healthy lifestyle through a breadth and depth of physical activities.</li>
+            <li><i class="fas fa-calendar-check"></i> Ensuring all students participate in a holistic curriculum which embeds physical activity into their daily routine.</li>
+            <li><i class="fas fa-medal"></i> Fostering and nurturing athletes who aspire to excellence in their selected codes.</li>
+            <li><i class="fas fa-user-graduate"></i> Developing the whole person as well as the athlete.</li>
+            <li><i class="fas fa-handshake"></i> Engaging with the school's wider community through developing partnerships with external agencies, regional and national sporting bodies and other schools.</li>
+        </ul>
     </section>
 
     <!-- ACHIEVEMENTS -->
@@ -70,46 +74,42 @@
     <section class="sports-gallery-section">
         <h2>Gallery</h2>
         <div class="sports-gallery">
-            <figure class="gallery-item"><img src="../assets/sportspage/lacrose.jpg" alt=" Lacrose action"></figure>
+            <figure class="gallery-item"><img src="../assets/sportspage/lacrose.jpg" alt="Lacrosse action"></figure>
             <figure class="gallery-item"><img src="../assets/sportspage/rugby.jpg" alt="Rugby tackle"></figure>
             <figure class="gallery-item"><img src="../assets/sportspage/basketball.jpg" alt="Basketball play"></figure>
-            <figure class="gallery-item"><img src="../assets/sportspage/water polo.jpg" alt="Water polo match"></figure>
+            <!-- Fix 4: Renamed file reference — spaces in filenames are invalid in URLs.
+                 Rename the actual file to "water-polo.jpg" to match. -->
+            <figure class="gallery-item"><img src="../assets/sportspage/water-polo.jpg" alt="Water polo match"></figure>
             <figure class="gallery-item"><img src="../assets/sportspage/track.jpg" alt="Athletics sprint"></figure>
             <figure class="gallery-item"><img src="../assets/sportspage/tennis.jpg" alt="Tennis"></figure>
             <figure class="gallery-item"><img src="../assets/sportspage/hockey.jpg" alt="Hockey action"></figure>
             <figure class="gallery-item"><img src="../assets/sportspage/criket.jpg" alt="Cricket shot"></figure>
-            <figure class="gallery-item"><img src="../assets/sportspage/snowboard.jpg" alt="snowboarding"></figure>
+            <figure class="gallery-item"><img src="../assets/sportspage/snowboard.jpg" alt="Snowboarding"></figure>
         </div>
         <p class="gallery-note">Photos of different sports and activities at Rosmini</p>
     </section>
 
-    <!-- FOOTER With usefull links -->
-  
+    <!-- FOOTER with useful links -->
     <footer class="site-footer">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>Rosmini College</h4>
+                <!-- Fix 5: Changed h4 to h3 — h4 after h2 skips a level -->
+                <h3>Rosmini College</h3>
                 <p>36 Domain Road</p>
                 <p>Takapuna, Auckland 0622</p>
                 <p>09 489 5417</p>
                 <a href="mailto:office@rosmini.school.nz">office@rosmini.school.nz</a>
             </div>
             <div class="footer-col">
-                <h4>For Students</h4>
-                <a href="../Index.html"> Home </a>
+                <h3>For Students</h3>
+                <a href="../Index.html">Home</a>
                 <a href="sports.html">Sports</a>
-                <a href="staff.html"> Staff</a>
-             <a href="contactus.html">Contact us</a>
-
+                <a href="staff.html">Staff</a>
             </div>
-
-               <div class="footer-col">
-                <h4> Contact</h4>
-            
+            <div class="footer-col">
+                <h3>Contact</h3>
                 <a href="contactus.html">Contact us</a>
-             
             </div>
-           
         </div>
         <div class="footer-bottom">© 2025 Rosmini College · Charity fulfils the law</div>
     </footer>
